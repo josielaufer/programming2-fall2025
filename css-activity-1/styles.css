@@ -1,0 +1,23 @@
+.class {
+	background-color: lightpink;
+	font-family: Verdana, "DejaVu Sans", "sans-serif";
+}
+
+#first  {
+	color: blue;
+	font-size: 36px;
+	font-family: Futura, "Times new roman", "comic sans";
+}
+
+#second {
+	font-size: 24px;
+}
+
+#third {
+	background-color: lightgreen;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: Futura, "times new roman", "comic sans";
+}
+
+
