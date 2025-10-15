@@ -2,11 +2,11 @@
 	color: #96CDFF;
 	background-color:#29339B;
 	padding: 10px;
-	
 	font-size: 30px;
 	font-weight: bold ;
 	border: 5px solid #96CDFF;
-	font-family: "times new roman", sans-serif;
+	font-family: "Trirong", "Alegreya Sans SC", serif;
+	
 
 }
 
@@ -15,17 +15,16 @@ body {
 }
 
 .buttons {
-	font-size: 18px;
+	font-size: 20px;
 	color: #231651;
 	border: groove 3px #231651 ;
 	background-color: #96CDFF;
-	font-family: "times new roman", sans-serif;
 	padding: 10px ;
 	border-radius:8px;
 	display:inline-block;
 	text-decoration: none;
 	font-weight: bold ;
-	margin: 5px;
+	font-family: "Trirong", "times new roman", serif;
 
 }
 
@@ -42,7 +41,8 @@ ul{
 .titles {
 	color:#29339B ;
 	background-color:#D8E1FF;
-	border: dotted 3px #231651 ;
+	border: dotted 4px #231651 ;
+	font-family: "Trirong", "times new roman", serif;
 	
 }
 
@@ -60,16 +60,15 @@ h3 {
 p {
 	color: #29339B;
 	background-color:#96CDFF;
-	padding: 15px;
+	padding: 20px;
+	height: 70px;
 
 
 }
 
 ul li{
 	color: #29339B;
-	background-color:#96CDFF;
 	padding: 15px;
-	height: 10px;
 	width: fit-content;
 	margin: auto;
 }
