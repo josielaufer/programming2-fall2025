@@ -1,0 +1,148 @@
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  flex-wrap: wrap;
+/*This class is for the leaders page and the flex-wrap property makes the photos adjust as you shrink or widen your screen */
+}
+
+.box{
+  flex-basis: 200px;
+  text-align: center;
+/*This class is for each box that includes the text and the photo for each leader. The flex-basis tells the computer that each of the boxes starts as 200px/ */
+}
+
+.right-links{
+  display: flex;
+  gap: 10px;
+}
+
+.left-links{
+  display: flex;
+  gap: 10px;
+}
+
+.header{
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  background-color: white;
+
+}
+
+#link1:hover, #link2:hover, #link3:hover, #link4:hover{
+  text-decoration: underline;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+li{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+
+}
+
+a{ 
+  text-decoration: none ;
+  color: hotpink;
+}
+
+
+h2{
+  text-align: center;
+  color: #FD3E81;
+  border: 3px solid #FF69B4;
+  padding: 10px;
+  
+
+
+}
+
+body{
+  background-color: #ffeff7;
+}
+
+h3{
+  text-align: center;
+  color: hotpink;
+  margin: 30px;
+  font-size: 25px;
+}
+
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  flex-basis: 300px;
+  background-color: hotpink;
+  color: white;
+  text-size: 20px;
+  padding: 10px;
+  
+}
+
+.event{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 52px;
+}
+
+
+.image{
+  display:flex;
+
+}
+
+.description{
+  display:flex;
+  flex-basis: 300px;
+  background-color: hotpink;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+
+
+}
+
+
+
+.info{
+  background-color: hotpink;
+  color: white;
+  text-size: 25px;
+  padding: 10px;
+}
+
+#mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  flex-basis: 300px;
+  background-color: #ff528f;
+  color: white;
+  padding: 10px;
+  height: fit-content;
+  align-self: center;
+  font-size: 25px;
+}
+
+
+
+
