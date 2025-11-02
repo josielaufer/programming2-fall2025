@@ -12,6 +12,7 @@
 /*This class is for each box that includes the text and the photo for each leader. The flex-basis tells the computer that each of the boxes starts as 200px/ */
 }
 
+
 .right-links{
   display: flex;
   gap: 10px;
@@ -26,16 +27,19 @@
   display: flex;
   padding: 5px;
   justify-content: space-between;
+  /*The space-between makes it so the rigth links and the left links are on opposite sides of the screen */
   background-color: white;
 
 }
 
 #link1:hover, #link2:hover, #link3:hover, #link4:hover{
   text-decoration: underline;
+  /*This hover function makes it so that when you hover over these links, they become underlined*/
 }
 
 ul{
   list-style-type: none;
+  /* This makes it so the links do not have the bulet points infront of them */
   padding: 0px;
 }
 
@@ -44,10 +48,12 @@ li{
   font-weight: bold;
   padding: 8px;
 
+
 }
 
-a{ 
+.headers{ 
   text-decoration: none ;
+  /*This makes it so there is no underline for the links */
   color: hotpink;
 }
 
@@ -58,8 +64,6 @@ h2{
   border: 3px solid #FF69B4;
   padding: 10px;
   
-
-
 }
 
 body{
@@ -82,17 +86,16 @@ h3{
   
 
 }
-
 .text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 5px;
-  flex-basis: 300px;
   background-color: hotpink;
   color: white;
-  text-size: 20px;
+  font-size: 18px;
   padding: 10px;
+
   
 }
 
@@ -101,11 +104,13 @@ h3{
   flex-direction: row;
   justify-content: center;
   gap: 52px;
+
 }
 
 
 .image{
   display:flex;
+  margin: 10px;
 
 }
 
@@ -116,16 +121,15 @@ h3{
   color: white;
   font-size: 20px;
   padding: 10px;
-
+  margin: 10px;
 
 }
-
 
 
 .info{
   background-color: hotpink;
   color: white;
-  text-size: 25px;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -134,11 +138,11 @@ h3{
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  flex-basis: 300px;
   background-color: #ff528f;
   color: white;
   padding: 10px;
   height: fit-content;
+  /*This makes the text inside of the text box fit the entire box*/
   align-self: center;
   font-size: 25px;
 }
