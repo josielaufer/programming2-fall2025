@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 52px;
   flex-wrap: wrap;
-/*This class is for the leaders page and the flex-wrap property makes the photos adjust as you shrink or widen your screen */
+ /*This class is for the leaders page and the flex-wrap property makes the photos adjust as you shrink or widen your screen */
 }
 
 .box{
