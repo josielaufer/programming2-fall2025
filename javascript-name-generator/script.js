@@ -1,58 +1,61 @@
 function makeName() {
+	// This is scanning the document for the variable with that id
     const month = document.getElementById("month").value;
     const age = document.getElementById("age").value;
     const color = document.getElementById("color").value;
+   	// This is storing values for the variables but making it so that the value can change
    	let firstName="";
    	let secondName="";
    	let thirdName="";
 
 
 
-    if (month=="january") {
+// this is changing the first name variable based off of the month the user inputs
+    if (month=="January") {
     	firstName="strawberry"
     }
 
-    else if (month=="february") {
+    else if (month=="February") {
     	firstName="blueberry"
     }
 
-    else if (month=="march") {
+    else if (month=="March") {
     	firstName="pineapple"
     }
 
-    else if (month=="april") {
+    else if (month=="April") {
     	firstName="pomegranate"
     }
 
-    else if (month=="may") {
+    else if (month=="May") {
     	firstName="grape"
     }
 
-    else if (month=="june") {
+    else if (month=="June") {
     	firstName="watermelon"
     }
 
-    else if (month=="july") {
+    else if (month=="July") {
     	firstName="dragonfruit"
     }
 
-    else if (month=="august") {
+    else if (month=="August") {
     	firstName="mango"
     }
 
-    else if (month=="september") {
+    else if (month=="September") {
     	firstName="melon"
     }
 
-    else if (month=="october") {
+    else if (month=="October") {
     	firstName="apple"
     }
 
-    else if (month=="november"){
+    else if (month=="November"){
     	firstName="banana"
     }
 
-    else if (month=="december") {
+    else if (month=="December") {
     	firstName="raspberry"
     }
 
@@ -60,6 +63,7 @@ function makeName() {
     	alert("That is not a month. Try again.")
     }
 
+// this is changing the second name variable based off of the age the user inputs
 
     if (age > 0 && age <10) {
     	secondName="princess"
@@ -77,7 +81,7 @@ function makeName() {
     	alert("That is not your actual age. Try again.")
 
     }
-
+// this is changing the third name variable based off of the color the user inputs
     if (color == "pink"){
     	thirdName= "of Paris"
     }
@@ -110,9 +114,13 @@ function makeName() {
     	alert("That is not a good color. Try again.")
     }
 
+// this is checking to see if each name is being set correctly
+    console.log(firstName);
+    console.log(secondName);
+    console.log(thirdName);
 
 
-
+// this is combining the names together and then putting that in the output
     const generatedName= firstName + " " + secondName + " " + thirdName;
 
     document.getElementById("generatedName").innerText = generatedName;
