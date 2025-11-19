@@ -1,5 +1,5 @@
 function makeName() {
-	// This is scanning the document for the variable with that id
+	// This is scanning the document for the variable with that id and storing each value
     const month = document.getElementById("month").value;
     const age = document.getElementById("age").value;
     const color = document.getElementById("color").value;
@@ -60,7 +60,7 @@ function makeName() {
     }
 
     else{
-    	alert("That is not a month. Try again.")
+    	alert("That is not a month. Try again. (make sure first letter is capitalized)")
     }
 
 // this is changing the second name variable based off of the age the user inputs
@@ -73,7 +73,7 @@ function makeName() {
     	secondName="prince"
     }
 
-    else if (age > 50 && age <100) {
+    else if (age > 20 && age <100) {
     	secondName="king"
     }
 
@@ -111,7 +111,7 @@ function makeName() {
     }
 
     else {
-    	alert("That is not a good color. Try again.")
+    	alert("That is not a good color. Try again. (make sure first letter is lowercase)")
     }
 
 // this is checking to see if each name is being set correctly
