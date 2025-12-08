@@ -1,14 +1,113 @@
 #header {
 	background-color: #A3C3D9;
 	padding: 10px;
+	text-align: center;
 }
 
 
 .question {
 	background-color:#CCD6EB ;
 	padding: 10px;
+	font-size: 25px;
+
 }
 
 body {
 	background-color: #E9ECF5
+
 }
+
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+#album{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#description{
+	text-align: center;
+	font-size: 20px;
+}
+
+input[type="radio"] {
+	width: 25px;
+	height: 25px;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  flex-wrap: wrap;
+ 
+}
+
+.box {
+	background-color:#A3C3D9 ;
+	padding: 30px;
+}
+
+#fall:hover, #winter:hover, #spring:hover, #summer:hover{
+  background-color:#AE76A6 ;
+  color: white;
+  
+}
+
+ #blue:hover {
+ 	background-color:blue ;
+ 	color: white;
+ }
+
+ #white:hover {
+ 	background-color:white ;
+ 	color:black
+ }
+
+ #black:hover{
+ 	background-color:black ;
+ 	color: white;
+ }
+
+ #pink:hover{
+ 	background-color:pink ;
+ }
+
+
+#daytime:hover, #nightime:hover, #afternoon:hover{
+  background-color:#AE76A6 ;
+  color: white;
+  
+}
+
+#happy:hover, #sad:hover, #both:hover{
+  background-color:#AE76A6 ;
+  color: white;
+  
+}
+
+
+
+.options1, .options2, .options3, .options4 {
+	font-size: 20px;
+	gap: 10px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+

@@ -11,78 +11,91 @@
 
     <h1 id="header"> Which Taylor Swift Album are you? </h1>
 
-    
-    <p class="question">What's your favorite season?</p>
+    <div class="container">
+      <div class="box">
+        <p class="question">What's your favorite season?</p>
+        <div class= "options1">
+          <input type="radio" id="fall" name="favoriteSeason">
+          <label id="fall" for="fall">Fall</label><br>
 
-    <input type="radio" id="fall" name="favoriteSeason">
-    <label for="fall">Fall</label><br>
+          <input type="radio" id="winter" name="favoriteSeason">
+          <label id="winter" for="winter">Winter</label><br>
+          
+          <input type="radio" id="spring" name="favoriteSeason">
+          <label id="spring" for="spring">Spring</label><br>
 
-    <input type="radio" id="winter" name="favoriteSeason">
-    <label for="winter">Winter</label><br>
-    
-    <input type="radio" id="spring" name="favoriteSeason">
-    <label for="spring">Spring</label><br>
-
-    <input type="radio" id="summer" name="favoriteSeason">
-    <label for="summer">Summer</label>
-
-    <br><br>
-
-
-    <p class="question">What's your favorite nail color?</p>
-
-    <input type="radio" id="nothing" name="nailColor">
-    <label for="nothing">Nothing</label><br>
-
-    <input type="radio" id="blue" name="nailColor">
-    <label for="blue">Blue</label><br>
-    
-    <input type="radio" id="white" name="nailColor">
-    <label for="white">White</label><br>
-
-    <input type="radio" id="black" name="nailColor">
-    <label for="black">Black</label><br>
-
-    <input type="radio" id="pink" name="nailColor">
-    <label for="pink">Pink</label>
-
-    <br><br>
+          <input type="radio" id="summer" name="favoriteSeason">
+          <label id="summer" for="summer">Summer</label>
+        </div>
+      </div>
 
 
-    <p class="question">Do you prefer a daytime, afternoon or nigthtime concert?</p>
+      <br><br>
 
-    <input type="radio" id="daytime" name="concert">
-    <label for="daytime">Daytime</label><br>
+      <div class="box">
+        <p class="question">What's your favorite nail color?</p>
 
-    <input type="radio" id="afternoon" name="concert">
-    <label for="afternoon">Afternoon</label><br>
-    
-    <input type="radio" id="nightime" name="concert">
-    <label for="nightime">Nightime</label><br>
+        <div class= "options2">
+          <input type="radio" id="nothing" name="nailColor">
+          <label id="nothing" for="nothing">Nothing</label><br>
 
-  
+          <input type="radio" id="blue" name="nailColor">
+          <label id="blue"for="blue">Blue</label><br>
+          
+          <input type="radio" id="white" name="nailColor">
+          <label id="white"for="white">White</label><br>
 
-    <br><br>
+          <input type="radio" id="black" name="nailColor">
+          <label id="black"for="black">Black</label><br>
 
-    <p class="question">Do you like sad music, happy music or both?</p>
+          <input type="radio" id="pink" name="nailColor">
+          <label id="pink"for="pink">Pink</label>
+        </div>
+      </div>
 
-    <input type="radio" id="sad" name="music">
-    <label for="sad">Sad</label><br>
+      <br><br>
 
-    <input type="radio" id="happy" name="music">
-    <label for="happy">Happy</label><br>
-    
-    <input type="radio" id="both" name="music">
-    <label for="both">Both</label><br>
+      <div class="box">
+        <p class="question">Do you prefer a daytime, afternoon or nightime concert?</p>
 
+        <div class= "options3">
+          <input type="radio" id="daytime" name="concert">
+          <label id="daytime"for="daytime">Daytime</label><br>
 
-    <br><br>
+          <input type="radio" id="afternoon" name="concert">
+          <label id="afternoon"for="afternoon">Afternoon</label><br>
+          
+          <input type="radio" id="nightime" name="concert">
+          <label id="nightime"for="nightime">Nightime</label><br>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="box">
+        <p class="question">Do you like sad music, happy music or both?</p>
+        <div class= "options4">
+          <input type="radio" id="sad" name="music">
+          <label id="sad"for="sad">Sad</label><br>
+
+          <input type="radio" id="happy" name="music">
+          <label id="happy"for="happy">Happy</label><br>
+          
+          <input type="radio" id="both" name="music">
+          <label id="both" for="both">Both</label><br>
+        </div>
+     </div>
+
+      <br><br>
+    </div>
 
 
 
     <button onclick="TSAlbum()">Get Results!</button>
     
     <p id="album"></p> 
+
+    <p id="description"> </p>
 
     <img id = "image" src=" " width=400 height=400>
 

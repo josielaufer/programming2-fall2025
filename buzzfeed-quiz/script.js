@@ -29,8 +29,8 @@ function TSAlbum() {
 
 	let spring = document.getElementById("spring");
 	if(spring.checked) {
-		nine=nine+1
-		lover=lover+4
+		nine=nine+3
+		lover=lover+3
 		TLOASG=TLOASG+3
 		console.log("The user chose spring");
 	}
@@ -147,14 +147,17 @@ function TSAlbum() {
 
 
 	let album= " "
+	let description=" "
 
 	if (taylorSwift>fearless && taylorSwift>speakNow && taylorSwift>red && taylorSwift>nine && taylorSwift>lover && taylorSwift>reputation && taylorSwift>folklore && taylorSwift>evermore && taylorSwift>midnights && taylorSwift>TLOASG) {
 		album = "Taylor Swift (debut)"
+		description="You are carefree, love the summer time and are passionate about the things you love. "
 		
 	}
 
 	else if (fearless>taylorSwift && fearless>speakNow && fearless>red && fearless>nine && fearless>lover && fearless>reputation && fearless>folklore && fearless>evermore && fearless>midnights && fearless>TLOASG) {
 		album = "Fearless"
+		description= "You are fearless, not afraid of a challenge and have a creative imagination."
 		
 
 	}
@@ -162,53 +165,61 @@ function TSAlbum() {
 
 	else if (speakNow>taylorSwift && speakNow>fearless && speakNow>red && speakNow>nine && speakNow>lover && speakNow>reputation && speakNow>folklore && speakNow>evermore && speakNow>midnights && speakNow>TLOASG) {
 		album = "Speak Now"
+		description="You say what's on your mind at all times and when you experience emotions, you feel them very deeply."
 		
 
 	}
 
 	else if (red>taylorSwift && red>fearless && red>speakNow && red>nine && red>lover && red>reputation && red>folklore && red>evermore && red>midnights && red>TLOASG) {
 		album = "Red"
+		description="You are very intelligent, thoughtful and a great team player.  "
 		
 
 	}
 
 	else if (nine>taylorSwift && nine>fearless && nine>speakNow && nine>red && nine>lover && nine>reputation && nine>folklore && nine>evermore && nine>midnights && nine>TLOASG) {
 		album = "1989"
+		description= "You are outgoing, kind to your friends and excited for the future."
 		
 
 	}
 
 	else if(lover>taylorSwift && lover>fearless && lover>speakNow && lover>nine && lover>red && lover>reputation && lover>folklore && lover>evermore && lover>midnights && lover>TLOASG) {
 		album = "Lover"
+		description="You are in love whether you know it or not and are a charistmatic person"
 		
 	}
 
 	else if (reputation>taylorSwift && reputation>fearless && reputation>speakNow && reputation>nine && reputation>red && reputation>lover && reputation>folklore && reputation>evermore && reputation>midnights && reputation>TLOASG) {
 		album = "Reputation"
+		description="You call people out when you catch them lying but you also have a soft side."
 		
 
 	}
 
 	else if (folklore>taylorSwift && folklore>fearless && folklore>speakNow && folklore>nine && folklore>red && folklore>lover && folklore>reputation && folklore>evermore && folklore>midnights && folklore>TLOASG) {
 		album = "Folklore"
+		description="You are a storyteller with lots of ideas. "
 		
 
 	}
 
 	else if (evermore>taylorSwift && evermore>fearless && evermore>speakNow && evermore>nine&& evermore>red && evermore>lover && evermore>reputation && evermore>folklore && evermore>midnights && evermore>TLOASG) {
 		album = "Evermore"
+		description="You do not express emotions in a grand way but you feel them deeply instead."
 		
 
 	}
 
 	else if (midnights>taylorSwift && midnights>fearless && midnights>speakNow && midnights>nine && midnights>red && midnights>lover && midnights>reputation && midnights>folklore && midnights>evermore && midnights>TLOASG) {
 		album = "Midnights"
+		description="You are a very fun person with a hilarious humor."
 		
 	}
 
 	else if (TLOASG>taylorSwift && TLOASG>fearless && TLOASG>speakNow && TLOASG>nine && TLOASG>red && TLOASG>lover && TLOASG>reputation && TLOASG>folklore && TLOASG>evermore && TLOASG>midnights) {
-		
 		album="The Life Of a Show Girl"
+		description="You are confident, interesting and dramatic. "
 		
 
 	}
@@ -221,9 +232,13 @@ function TSAlbum() {
 
 		album=albums[random]
 
+		description="You have a mix of personality traits from several eras and aren't confined to just one!"
+
 	}
 
 	document.getElementById("album").innerText=album;
+
+	document.getElementById("description").innerText=description;
 
 
 
@@ -239,6 +254,11 @@ function TSAlbum() {
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightBlue";
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "green";
 		}
 
 	}
@@ -257,6 +277,11 @@ function TSAlbum() {
 			item.style.backgroundColor= "white";
 			item.style.color= "black";
 		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "yellow";
+		}
 	}
 
 
@@ -272,6 +297,11 @@ function TSAlbum() {
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightPurple";
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "purple";
 		}
 	
 	}
@@ -290,6 +320,11 @@ function TSAlbum() {
 			item.style.backgroundColor= "white";
 			item.style.color= "black";
 		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "red";
+		}
 	
 	}
 
@@ -305,7 +340,11 @@ function TSAlbum() {
 		for (const item of question) {
 			item.style.backgroundColor= "white";
 			item.style.color= "black";
-	
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "lightBlue";
 		}
 	}
 
@@ -320,7 +359,11 @@ function TSAlbum() {
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightBlue";
-	
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "lightPink";
 		}
 	}
 
@@ -336,7 +379,11 @@ function TSAlbum() {
 		for (const item of question) {
 			item.style.backgroundColor= "black";
 			item.style.color="white"
-		
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "darkGrey";
 		}
 	}
 
@@ -353,6 +400,11 @@ function TSAlbum() {
 			item.style.backgroundColor= "white";
 			item.style.color="black";
 		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "grey";
+		}
 	}
 
 	else if (album == "Evermore") {
@@ -368,6 +420,12 @@ function TSAlbum() {
 			item.style.backgroundColor= "white";
 			item.style.color="black";
 		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "grey";
+		}
+
 	}
 
 	else if (album == "Midnights"){
@@ -384,6 +442,11 @@ function TSAlbum() {
 			item.style.backgroundColor= "purple";
 			item.style.color="white";
 		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "darkBlue";
+		}
 	}
 
 	else if (album=="The Life Of a Show Girl"){
@@ -397,6 +460,11 @@ function TSAlbum() {
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightGreen";
+		}
+
+		const box = document.getElementsByClassName("box");
+		for (const item of box) {
+			item.style.backgroundColor= "orange";
 		}
 	}
 
