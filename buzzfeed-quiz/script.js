@@ -58,7 +58,7 @@ function TSAlbum() {
 	if(blue.checked) {
 		midnights=midnights+2
 		TLOASG=TLOASG+3
-		speakNow=speakNow+1
+		speakNow=speakNow+2
 		console.log("The user chose blue");
 	}
 
@@ -239,12 +239,14 @@ function TSAlbum() {
 		document.body.style.backgroundColor= "green";
 		document.body.style.color= "white";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "lightBlue";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-self-titled-billboard-1240.jpg?";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightBlue";
+			item.style.color = "white";
 		}
 
 		const box = document.getElementsByClassName("box");
@@ -260,9 +262,9 @@ function TSAlbum() {
 	else if (album == "Fearless"){
 		const fearlessSound= new Audio("fearless.mp3");
 		fearlessSound.play();
-		document.body.style.backgroundColor= "yellow";
+		document.body.style.backgroundColor= "#FCD12A";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("album").style.color= "black";
+		document.getElementById("album").style.color= "white";
 		document.getElementById("header").style.backgroundColor= "white";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-fearless-2008-billboard-1240.jpg?";
@@ -274,7 +276,7 @@ function TSAlbum() {
 
 		const box = document.getElementsByClassName("box");
 		for (const item of box) {
-			item.style.backgroundColor= "yellow";
+			item.style.backgroundColor= "#FCD12A";
 		}
 		description= "You are fearless, not afraid of a challenge and have a creative imagination."
 	}
@@ -286,12 +288,14 @@ function TSAlbum() {
 		document.body.style.backgroundColor= "purple";
 		document.body.style.color= "white";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "#E4A0F7";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://people.com/thmb/_6-x9pNd5xMw3WJ6luN9YIdNmwg=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-3-5831d0787fb94e94b56b89cd1d203689.jpg";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
-			item.style.backgroundColor= "lightPurple";
+			item.style.backgroundColor= "#E4A0F7";
+			item.style.color="white"
 		}
 
 		const box = document.getElementsByClassName("box");
@@ -309,6 +313,7 @@ function TSAlbum() {
 		document.body.style.backgroundColor= "red";
 		document.body.style.color= "white";
 		document.getElementById("album").style.fontWeight= "bold";
+		document.getElementById("album").style.color= "white";
 		document.getElementById("header").style.backgroundColor= "white";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://stylecaster.com/wp-content/uploads/2024/04/Red.png?";
@@ -332,13 +337,14 @@ function TSAlbum() {
 		nineSound.play();
 		document.body.style.backgroundColor= "lightBlue";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "#E4A0F7";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://people.com/thmb/nf5iWE5yBnk7ywgOIanE11nrcH4=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-5-76d90fcaeaa84286a78c344dbeae9209.jpg";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
-			item.style.backgroundColor= "white";
-			item.style.color= "black";
+			item.style.backgroundColor= "#E4A0F7";
+			item.style.color= "white";
 		}
 
 		const box = document.getElementsByClassName("box");
@@ -354,12 +360,14 @@ function TSAlbum() {
 		loverSound.play();
 		document.body.style.backgroundColor= "lightPink";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "lightBlue";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://i.insider.com/5db1be67045a314d4d6dc055?width=800&format=jpeg&auto=webp";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightBlue";
+			item.style.color= "white";
 		}
 
 		const box = document.getElementsByClassName("box");
@@ -375,8 +383,9 @@ function TSAlbum() {
 		reputationSound.play();
 		document.body.style.backgroundColor= "darkGrey";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "black";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://people.com/thmb/Il8Det7N7UvvQAojNWSQyhcnjuM=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(992x0:994x2)/taylor-swift7-2000-48f9bfb372c34e36866773b1ede0b372.jpg";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
@@ -397,6 +406,7 @@ function TSAlbum() {
 		folkloreSound.play();
 		document.body.style.backgroundColor= "grey";
 		document.getElementById("album").style.fontWeight= "bold";
+		document.getElementById("album").style.color= "white";
 		document.getElementById("header").style.backgroundColor= "white";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png";
@@ -419,6 +429,7 @@ function TSAlbum() {
 		evermoreSound.play();
 		document.body.style.backgroundColor= "grey";
 		document.getElementById("album").style.fontWeight= "bold";
+		document.getElementById("album").style.color= "white";
 		document.getElementById("header").style.backgroundColor= "white";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBWRnJodHAw3EQsXc-FuPdf4Lzmxh5sLDWxg&s";
@@ -443,8 +454,9 @@ function TSAlbum() {
 		document.body.style.backgroundColor= "darkBlue";
 		document.body.style.color= "white";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
-		document.getElementById("header").style.color= "black";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "purple";
+		document.getElementById("header").style.color= "white";
 		document.getElementById("image").src="https://i.iheart.com/v3/re/new_assets/63502b9eaee0f4b0e56f9a54?ops=contain(1480,0)";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
@@ -465,12 +477,14 @@ function TSAlbum() {
 		showgirlSound.play();
 		document.body.style.backgroundColor= "orange";
 		document.getElementById("album").style.fontWeight= "bold";
-		document.getElementById("header").style.backgroundColor= "white";
+		document.getElementById("album").style.color= "white";
+		document.getElementById("header").style.backgroundColor= "lightGreen";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://pagesix.com/wp-content/uploads/sites/3/2025/08/taylor-swift-life-showgirl-cover-109561677-1.png";
 		const question = document.getElementsByClassName("question");
 		for (const item of question) {
 			item.style.backgroundColor= "lightGreen";
+			item.style.color="black"
 		}
 
 		const box = document.getElementsByClassName("box");
