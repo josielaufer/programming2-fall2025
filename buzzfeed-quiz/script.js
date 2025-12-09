@@ -50,7 +50,7 @@ function TSAlbum() {
 	let nothing = document.getElementById("nothing");
 	if(nothing.checked) { // if filled in
 		taylorSwift=taylorSwift+2
-		fearless=fearless+1
+		fearless=fearless+3
 		console.log("The user chose nothing");
 	}
 
@@ -90,6 +90,7 @@ function TSAlbum() {
 		nine=nine+1
 		lover=lover+3
 		TLOASG=TLOASG+2
+		taylorSwift=taylorSwift+1
 		console.log("The user chose daytime");
 	}
 
@@ -98,7 +99,7 @@ function TSAlbum() {
 		nine=nine+1
 		speakNow=speakNow+1
 		folklore=folklore+1
-		taylorSwift=taylorSwift+1
+
 		fearless=fearless+1
 
 		console.log("The user chose afternoon");
@@ -151,13 +152,12 @@ function TSAlbum() {
 
 	if (taylorSwift>fearless && taylorSwift>speakNow && taylorSwift>red && taylorSwift>nine && taylorSwift>lover && taylorSwift>reputation && taylorSwift>folklore && taylorSwift>evermore && taylorSwift>midnights && taylorSwift>TLOASG) {
 		album = "Taylor Swift (debut)"
-		description="You are carefree, love the summer time and are passionate about the things you love. "
 		
 	}
 
 	else if (fearless>taylorSwift && fearless>speakNow && fearless>red && fearless>nine && fearless>lover && fearless>reputation && fearless>folklore && fearless>evermore && fearless>midnights && fearless>TLOASG) {
 		album = "Fearless"
-		description= "You are fearless, not afraid of a challenge and have a creative imagination."
+		
 		
 
 	}
@@ -165,61 +165,52 @@ function TSAlbum() {
 
 	else if (speakNow>taylorSwift && speakNow>fearless && speakNow>red && speakNow>nine && speakNow>lover && speakNow>reputation && speakNow>folklore && speakNow>evermore && speakNow>midnights && speakNow>TLOASG) {
 		album = "Speak Now"
-		description="You say what's on your mind at all times and when you experience emotions, you feel them very deeply."
 		
 
 	}
 
 	else if (red>taylorSwift && red>fearless && red>speakNow && red>nine && red>lover && red>reputation && red>folklore && red>evermore && red>midnights && red>TLOASG) {
 		album = "Red"
-		description="You are very intelligent, thoughtful and a great team player.  "
 		
 
 	}
 
 	else if (nine>taylorSwift && nine>fearless && nine>speakNow && nine>red && nine>lover && nine>reputation && nine>folklore && nine>evermore && nine>midnights && nine>TLOASG) {
 		album = "1989"
-		description= "You are outgoing, kind to your friends and excited for the future."
 		
 
 	}
 
 	else if(lover>taylorSwift && lover>fearless && lover>speakNow && lover>nine && lover>red && lover>reputation && lover>folklore && lover>evermore && lover>midnights && lover>TLOASG) {
 		album = "Lover"
-		description="You are in love whether you know it or not and are a charistmatic person"
 		
 	}
 
 	else if (reputation>taylorSwift && reputation>fearless && reputation>speakNow && reputation>nine && reputation>red && reputation>lover && reputation>folklore && reputation>evermore && reputation>midnights && reputation>TLOASG) {
 		album = "Reputation"
-		description="You call people out when you catch them lying but you also have a soft side."
 		
 
 	}
 
 	else if (folklore>taylorSwift && folklore>fearless && folklore>speakNow && folklore>nine && folklore>red && folklore>lover && folklore>reputation && folklore>evermore && folklore>midnights && folklore>TLOASG) {
 		album = "Folklore"
-		description="You are a storyteller with lots of ideas. "
 		
 
 	}
 
 	else if (evermore>taylorSwift && evermore>fearless && evermore>speakNow && evermore>nine&& evermore>red && evermore>lover && evermore>reputation && evermore>folklore && evermore>midnights && evermore>TLOASG) {
 		album = "Evermore"
-		description="You do not express emotions in a grand way but you feel them deeply instead."
 		
 
 	}
 
 	else if (midnights>taylorSwift && midnights>fearless && midnights>speakNow && midnights>nine && midnights>red && midnights>lover && midnights>reputation && midnights>folklore && midnights>evermore && midnights>TLOASG) {
 		album = "Midnights"
-		description="You are a very fun person with a hilarious humor."
 		
 	}
 
 	else if (TLOASG>taylorSwift && TLOASG>fearless && TLOASG>speakNow && TLOASG>nine && TLOASG>red && TLOASG>lover && TLOASG>reputation && TLOASG>folklore && TLOASG>evermore && TLOASG>midnights) {
 		album="The Life Of a Show Girl"
-		description="You are confident, interesting and dramatic. "
 		
 
 	}
@@ -232,14 +223,14 @@ function TSAlbum() {
 
 		album=albums[random]
 
-		description="You have a mix of personality traits from several eras and aren't confined to just one!"
+		
 
 	}
 
 	document.getElementById("album").innerText=album;
 
-	document.getElementById("description").innerText=description;
 
+	
 
 
 	if (album == "Taylor Swift (debut)"){
@@ -261,6 +252,8 @@ function TSAlbum() {
 			item.style.backgroundColor= "green";
 		}
 
+		description="You are carefree, love the summer time and are passionate about the things you love. "
+
 	}
 
 
@@ -269,6 +262,7 @@ function TSAlbum() {
 		fearlessSound.play();
 		document.body.style.backgroundColor= "yellow";
 		document.getElementById("album").style.fontWeight= "bold";
+		document.getElementById("album").style.color= "black";
 		document.getElementById("header").style.backgroundColor= "white";
 		document.getElementById("header").style.color= "black";
 		document.getElementById("image").src="https://www.billboard.com/wp-content/uploads/2022/10/taylor-swift-fearless-2008-billboard-1240.jpg?";
@@ -282,6 +276,7 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "yellow";
 		}
+		description= "You are fearless, not afraid of a challenge and have a creative imagination."
 	}
 
 
@@ -303,6 +298,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "purple";
 		}
+		description="You say what's on your mind at all times and when you experience emotions, you feel them very deeply."
+		
 	
 	}
 
@@ -325,6 +322,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "red";
 		}
+		description="You are very intelligent, thoughtful and a great team player.  "
+		
 	
 	}
 
@@ -346,6 +345,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "lightBlue";
 		}
+		description= "You are outgoing, kind to your friends and excited for the future."
+		
 	}
 
 	else if (album == "Lover"){
@@ -365,6 +366,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "lightPink";
 		}
+		description="You are in love whether you know it or not and are a charistmatic person"
+		
 	}
 
 	else if (album == "Reputation") {
@@ -385,6 +388,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "darkGrey";
 		}
+		description="You call people out when you catch them lying but you also have a soft side."
+		
 	}
 
 	else if (album == "Folklore") {
@@ -405,6 +410,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "grey";
 		}
+		description="You are a storyteller with lots of ideas. "
+		
 	}
 
 	else if (album == "Evermore") {
@@ -425,6 +432,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "grey";
 		}
+		description="You do not express emotions in a grand way but you feel them deeply instead."
+		
 
 	}
 
@@ -447,6 +456,8 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "darkBlue";
 		}
+		description="You are a very fun person with a hilarious humor."
+		
 	}
 
 	else if (album=="The Life Of a Show Girl"){
@@ -466,10 +477,12 @@ function TSAlbum() {
 		for (const item of box) {
 			item.style.backgroundColor= "orange";
 		}
+		description="You are confident, interesting and dramatic. "
+		
 	}
 
 
-
+document.getElementById("description").innerText=description;
 
 
 
