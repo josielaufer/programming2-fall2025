@@ -232,7 +232,6 @@ function TSAlbum() {
 
 	
 
-
 	if (album == "Taylor Swift (debut)"){
 		const debutSound= new Audio("taylor-swift.mp3");
 		debutSound.play();
