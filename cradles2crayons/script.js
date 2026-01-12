@@ -2,7 +2,6 @@ function volunteerChoice() {
     
     let choice= ""
 
-
     community = document.getElementById("community");
     factory = document.getElementById("factory");
     company = document.getElementById("company");

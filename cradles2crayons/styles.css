@@ -199,6 +199,8 @@ button{
   font-size: 21px;
   padding: 10px;
   border-radius: 25px;
+  margin-bottom: 35px;
+
 }
 
 
@@ -215,6 +217,14 @@ h3 {
 
 #section{
   margin-top: 70px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
