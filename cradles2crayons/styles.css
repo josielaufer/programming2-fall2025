@@ -1,3 +1,8 @@
+body{
+  font-family: "times new roman";
+}
+
+
 .right-links{
   display: flex;
   gap: 10px;
@@ -15,7 +20,7 @@
   text-decoration: none ;
   color: #6e3fab;
   margin: 10px;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .header{
@@ -25,7 +30,6 @@
   align-items: center;
   background-color: #fcbf14;
   padding: 15px;
-
 
 }
 
@@ -97,10 +101,10 @@ ul{
 
 .select {
   text-decoration: none;
-  color: #fcbf14;;
+  color: #fcbf14;
   font-size: 25px;
   background-color: #6e3fab;
-  border: 3px dotted #fcbf14;;
+  border: 3px dotted #fcbf14;
   padding: 10px;
 
 }
@@ -200,6 +204,7 @@ button{
   padding: 10px;
   border-radius: 25px;
   margin-bottom: 35px;
+  text-align: center;
 
 }
 
@@ -218,6 +223,7 @@ h3 {
 #section{
   margin-top: 70px;
 }
+
 
 .logo {
   display: flex;
